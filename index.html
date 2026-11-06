@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFlow - Academia</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="cabecalho">
+        <h1 id="nome-do-sistema">Carregando...</h1>
+        <p><span id="versao"></span> · <span id="data-de-hoje"></span></p>
+      </header>
+
+      <section class="painel" aria-label="Resumo dos treinos">
+        <div class="estatistica">
+          <span>Total de treinos</span>
+          <strong id="total">0</strong>
+        </div>
+        <div class="estatistica">
+          <span>Planejados</span>
+          <strong id="planejados">0</strong>
+        </div>
+      </section>
+
+      <p id="proximo-treino" class="aviso" hidden></p>
+
+      <h2>Lista de treinos</h2>
+      <ul id="lista" class="lista"></ul>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
